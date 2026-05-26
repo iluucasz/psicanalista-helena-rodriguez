@@ -86,7 +86,7 @@ export function Book() {
                 Saiba Mais
               </a>
               <a
-                href="https://wa.me/557187265569?text=Gostaria%20de%20saber%20mais%20sobre%20o%20livro%20Da%20Caverna%20à%20Evolução"
+                href="https://pay.hotmart.com/M102747619S?checkoutMode=10&bid=1779822441770"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-secondary text-primary rounded-lg font-medium hover:bg-secondary/90 transition-colors text-center"
