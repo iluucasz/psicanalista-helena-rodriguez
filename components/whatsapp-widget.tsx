@@ -89,10 +89,10 @@ export function WhatsAppWidget() {
   const lastMessageIsBot = messages[messages.length - 1]?.from === "bot"
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-3">
       {/* Chat window */}
       {isOpen && (
-        <div className="w-80 bg-white rounded-2xl shadow-2xl overflow-hidden border border-border animate-in slide-in-from-bottom-4 fade-in duration-300">
+        <div className="w-[calc(100vw-2rem)] max-w-80 bg-white rounded-2xl shadow-2xl overflow-hidden border border-border animate-in slide-in-from-bottom-4 fade-in duration-300">
           {/* Header */}
           <div className="bg-primary px-4 py-3 flex items-center justify-between">
             <div className="flex items-center gap-3">
