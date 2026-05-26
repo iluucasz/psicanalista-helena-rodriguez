@@ -21,9 +21,9 @@ export function TopBar() {
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between text-sm">
-        <p className="text-primary-foreground/90">Me Acompanhe nas redes sociais</p>
-        <div className="flex items-center gap-6">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 py-2 sm:py-3 flex items-center justify-between text-xs sm:text-sm gap-3">
+        <p className="text-primary-foreground/90 truncate">Me acompanhe nas redes sociais</p>
+        <div className="flex items-center gap-3 sm:gap-6 shrink-0">
           <a
             href="https://www.instagram.com/trp.helenarodriguez/"
             target="_blank"

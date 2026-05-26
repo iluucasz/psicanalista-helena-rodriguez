@@ -21,8 +21,8 @@ export function Header() {
   }, [])
 
   return (
-    <header className={`fixed left-0 right-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border/50 transition-all duration-300 ${topbarVisible ? "top-10" : "top-0"}`}>
-      <div className="max-w-7xl mx-auto px-6">
+    <header className={`fixed left-0 right-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border/50 transition-all duration-300 ${topbarVisible ? "top-9 sm:top-10" : "top-0"}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <nav className="flex items-center justify-between">
           <Link href="/" className="hover:opacity-80 transition-opacity">
             <div className={`relative transition-all duration-300 ${isScrolled ? "w-14 h-14" : "w-20 h-20 md:w-36 md:h-36"}`}>
