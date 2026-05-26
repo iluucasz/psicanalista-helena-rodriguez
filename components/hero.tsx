@@ -49,11 +49,11 @@ export function Hero() {
           <div className="order-1 md:order-2 md:col-span-1 lg:col-span-2 relative flex justify-center md:justify-end">
             <div className="relative w-full max-w-lg">
               {/* Decorative background with gradient */}
-              <div className="absolute -inset-6 bg-gradient-to-br from-secondary/25 via-secondary/15 to-secondary/5 rounded-3xl blur-2xl" />
+              <div className="absolute -inset-6 bg-linear-to-br from-secondary/25 via-secondary/15 to-secondary/5 rounded-3xl blur-2xl" />
               
               {/* Main image container with elegant frame */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-secondary/40">
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none" />
                 <Image
                   src="/images/helena-hero.jpg"
                   alt="Helena Rodriguez - Psicanalista"

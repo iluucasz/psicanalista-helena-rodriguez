@@ -154,6 +154,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* Custom selection color */
 ::selection {
   background-color: #9ea6fe;

@@ -10,11 +10,11 @@ export function About() {
           <div className="md:col-span-1 lg:col-span-2 relative flex justify-center">
             <div className="relative w-full max-w-xl">
               {/* Glow vindo de baixo — diferente da Hero que vem do topo */}
-              <div className="absolute -inset-6 bg-gradient-to-tl from-primary/20 via-secondary/15 to-secondary/5 rounded-3xl blur-2xl" />
+              <div className="absolute -inset-6 bg-linear-to-tl from-primary/20 via-secondary/15 to-secondary/5 rounded-3xl blur-2xl" />
 
               {/* Main image container */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-primary/30 aspect-[3/4]">
-                <div className="absolute inset-0 bg-gradient-to-tl from-primary/10 to-transparent pointer-events-none z-10" />
+                <div className="absolute inset-0 bg-linear-to-tl from-primary/10 to-transparent pointer-events-none z-10" />
                 <Image
                   src="/images/helena-about.jpg"
                   alt="Helena Rodriguez em seu consultório"
@@ -30,8 +30,8 @@ export function About() {
               <div className="absolute -bottom-2 -right-2 w-16 h-16 border-b-2 border-r-2 border-primary rounded-br-2xl" />
 
               {/* Quote badge */}
-              <div className="absolute -bottom-8 -right-8 bg-card p-6 rounded-2xl shadow-2xl border border-border max-w-xs hidden lg:block z-20">
-                <p className="font-serif text-base text-foreground italic leading-relaxed">
+              <div className="absolute bottom-4 right-4 md:-bottom-6 md:-right-6 bg-card/95 p-3 md:p-6 rounded-xl md:rounded-2xl shadow-2xl border border-border max-w-55 md:max-w-xs z-20 backdrop-blur-sm">
+                <p className="font-serif text-sm md:text-base text-foreground italic leading-snug md:leading-relaxed">
                   "Seja como as ondas, faça de cada recuo um impulso para ir adiante."
                 </p>
               </div>
