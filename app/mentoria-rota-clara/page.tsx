@@ -31,8 +31,8 @@ const processSteps = [
 export default function MentoriaRotaClaraPage() {
   return (
     <>
-      <TopBar dark />
-      <Header dark logoSrc="/images/logo-mentoria-clara.png" logoAlt="Logo Mentoria Rota Clara" />
+      <TopBar />
+      <Header />
       <main className="bg-slate-950 text-white">
       <section className="relative overflow-hidden pt-64 pb-20 md:pt-80 md:pb-28">
         <Image
