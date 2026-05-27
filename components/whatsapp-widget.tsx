@@ -25,7 +25,7 @@ const BOT_STEPS = [
   },
   {
     id: "services",
-    message: "Helena atende em Psicoterapia Individual, Psicanálise Clínica e Mentoria Emocional, com sessões online. Quer saber mais?",
+    message: "Helena atende on-line para todo Brasil e presencialmente em Salvador - BA. Oferece psicanálise, mentoria e terapias alternativas. Quer saber mais ?",
     options: [
       { label: "Quero saber mais pelo WhatsApp", next: "whatsapp", whatsapp: "Olá, Helena! Gostaria de saber mais sobre os seus serviços." },
       { label: "Voltar ao início", next: "greeting" },
