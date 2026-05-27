@@ -165,12 +165,16 @@ export default function MentoriaRotaClaraPage() {
                 </div>
               </div>
 
-              <div className="rounded-4xl border border-white/12 bg-slate-900/70 p-8 shadow-[0_22px_70px_-45px_rgba(3,8,28,0.8)]">
-                <p className="text-lg leading-relaxed text-white/80 md:text-xl">
-                  Através de uma imersão profunda de autoconsciência e sabedoria interior, você será conduzido a enxergar com clareza aquilo que hoje te trava, te confunde ou te impede de avançar.
-                </p>
-                <p className="mt-5 text-lg font-medium leading-relaxed text-white md:text-xl">
-                  Porém viver uma vida mais leve e consciente é possível!
+              <div className="relative overflow-hidden rounded-4xl border border-secondary/45 bg-linear-to-br from-slate-900/92 via-slate-900/88 to-primary/25 p-8 ring-1 ring-secondary/25 shadow-[0_30px_95px_-40px_rgba(158,166,254,0.5)]">
+                <div className="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full bg-secondary/25 blur-3xl" />
+                <p className="relative text-lg leading-relaxed text-white/90 md:text-xl">
+                  Cada encontro é realizado sem pressa e sem tempo cronometrado. Você será conduzido a
+                  enxergar com <span className="font-semibold text-secondary">clareza</span> aquilo que te
+                  trava, te confunde e te impede de avançar, trabalhando cada ponto de forma
+                  <span className="font-semibold text-secondary"> estratégica</span> para que, ao final do
+                  processo, conquiste uma vida mais <span className="font-semibold text-secondary">leve</span>,
+                  <span className="font-semibold text-secondary"> consciente</span> e com
+                  <span className="font-semibold text-secondary"> resultados reais</span> naquilo que busca.
                 </p>
               </div>
             </div>
