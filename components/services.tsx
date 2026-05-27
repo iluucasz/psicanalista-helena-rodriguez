@@ -5,7 +5,7 @@ const services = [
   {
     title: "Terapia TRG",
     description:
-      "Reprocessamento emocional para acessar dores profundas com mais leveza, clareza e reorganizacao interna.",
+      "Terapia de Reprocessamento Generativo aqui acessamos dores profundas com leveza e direcionamento. Ideal para quem viveu situações difíceis que não gostaria de expor, essa abordagem utiliza visualização, percepção e ressignificação para promover compreensão emocional e alívio interno.",
     icon: Waves,
     image:
       "https://ogmg.my.canva.site/helenarodriguez/_assets/media/0fce2e311b40916fac3524f626f85cac.jpg"
@@ -39,7 +39,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="servicos" className="relative overflow-hidden py-24 md:py-28">
+    <section id="servicos" className="relative overflow-x-clip py-24 md:py-28">
       <div className="absolute inset-x-0 top-0 h-40 bg-linear-to-b from-secondary/25 to-transparent pointer-events-none" />
       <div className="absolute -left-32 top-24 h-72 w-72 rounded-full bg-primary/8 blur-3xl pointer-events-none" />
       <div className="absolute -right-24 bottom-16 h-80 w-80 rounded-full bg-secondary/18 blur-3xl pointer-events-none" />
