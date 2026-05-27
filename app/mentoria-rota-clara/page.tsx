@@ -22,12 +22,6 @@ const benefits = [
   "Avançar com propósito, direção e consciência"
 ]
 
-const processSteps = [
-  "Durante esse processo, vou te guiar a: observar seus padrões, reorganizar suas respostas e ampliar sua autoconsciência.",
-  "O foco será você e o seu progresso, com acompanhamento voltado para clareza, movimento e consistência interna.",
-  "Serão 5 encontros individuais e exclusivos, pensados para sustentar sua evolução com profundidade e direção."
-]
-
 export default function MentoriaRotaClaraPage() {
   return (
     <>
@@ -198,39 +192,6 @@ export default function MentoriaRotaClaraPage() {
                 <p className="mt-4 font-serif text-xl leading-tight text-white">{benefit}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-950 py-20 md:py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
-            <div className="rounded-4xl border border-white/12 bg-slate-900/70 p-8 shadow-[0_22px_70px_-45px_rgba(3,8,28,0.8)] md:p-10">
-              <p className="text-sm font-medium uppercase tracking-widest text-secondary">Durante esse processo, vou te guiar a:</p>
-              <div className="mt-6 space-y-4">
-                {processSteps.map((step) => (
-                  <div key={step} className="rounded-2xl border border-white/10 bg-slate-950/80 p-5 text-white/80 leading-relaxed">
-                    {step}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div id="bonus" className="rounded-4xl border border-primary/30 bg-linear-to-br from-primary/90 via-primary/80 to-slate-900 p-8 text-primary-foreground shadow-[0_25px_80px_-50px_rgba(14,29,97,0.9)] md:p-10">
-              <p className="text-sm font-medium uppercase tracking-widest text-primary-foreground/70">
-                Bônus
-              </p>
-              <h3 className="mt-4 font-serif text-3xl text-balance">
-                Acesso ao E-book Da Caverna á Evolução - O Homem em progresso
-              </h3>
-              <p className="mt-5 text-primary-foreground/85 leading-relaxed">
-                Uma imersão no sentido da vida e no propósito da nossa existência: entenda o porquê de evoluir e por que estar aqui já é um grande passo.
-              </p>
-              <div className="mt-8 rounded-3xl bg-white/10 p-5 text-sm leading-relaxed text-primary-foreground/90">
-                <p>Serão 5 encontros individuais e exclusivos.</p>
-                <p className="mt-3">A sua transformação começa com uma decisão!</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
