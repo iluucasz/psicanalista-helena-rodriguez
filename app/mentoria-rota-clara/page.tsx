@@ -3,6 +3,7 @@ import Image from "next/image"
 import { ArrowRight, CheckCircle2, CirclePlay, GraduationCap, Sparkles, Target, Users } from "lucide-react"
 import { Header } from "@/components/header"
 import { TopBar } from "@/components/topbar"
+import { Testimonials } from "@/components/testimonials"
 import { Footer } from "@/components/footer"
 
 const signals = [
@@ -195,6 +196,8 @@ export default function MentoriaRotaClaraPage() {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       <section id="comecar" className="bg-slate-900/65 py-20 md:py-24">
         <div className="mx-auto max-w-4xl px-6 text-center">
