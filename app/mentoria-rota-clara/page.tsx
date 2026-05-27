@@ -6,10 +6,11 @@ import { TopBar } from "@/components/topbar"
 import { Footer } from "@/components/footer"
 
 const signals = [
-  "Em alguns momentos reage emocionalmente e depois se arrepende.",
-  "Sente dificuldade em lidar com conflitos, críticas ou frustrações.",
-  "Sabe que poderia ir mais longe, mas o medo ou algumas crenças internas acabam travando o seu crescimento.",
-  "Tem a sensação de que existe um potencial maior dentro de você, mas algo sempre impede que avance."
+  "Sabe que pode ir mais longe, mas o medo ou algumas crenças internas acabam travando seu crescimento.",
+  "Deseja alcançar o sucesso pessoal, mas ainda duvida do seu próprio potencial.",
+  "Tem dificuldade de imaginar e sustentar um futuro positivo.",
+  "Sente dificuldade de organizar suas prioridades e construir um caminho para o sucesso.",
+  "Precisa de um propósito a seguir."
 ]
 
 const impacts = ["Autossabotagem", "Frustração", "Incerteza", "Instabilidade", "Estagnação"]
@@ -56,11 +57,10 @@ export default function MentoriaRotaClaraPage() {
 
             <div className="space-y-5">
               <h1 className="font-serif text-4xl leading-tight text-balance text-white md:text-5xl lg:text-6xl">
-                Para quem cansou de sobreviver e quer viver com intenção e verdade.
+                Para quem cansou de sobreviver e quer viver com intenção e resultado.
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
-                Uma experiência para quem sente que pode ir mais longe, mas precisa de clareza,
-                firmeza emocional e direção para avançar com consciência.
+                Uma imersão pra quem sabe que pode ir mais longe mas precisa de direção e firmeza emocional para avançar com consciência.
               </p>
             </div>
 
@@ -134,7 +134,7 @@ export default function MentoriaRotaClaraPage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
             <div className="rounded-4xl border border-white/12 bg-slate-900/70 p-8 shadow-[0_22px_70px_-45px_rgba(3,8,28,0.8)]">
-              <p className="text-sm font-medium uppercase tracking-widest text-secondary">Você percebe que...</p>
+              <p className="text-sm font-medium uppercase tracking-widest text-secondary">Você percebeu que...</p>
               <div className="mt-6 space-y-4">
                 {signals.map((signal) => (
                   <div key={signal} className="flex gap-3 rounded-2xl border border-white/10 bg-slate-950/80 p-4">
