@@ -32,7 +32,7 @@ export default function MentoriaRotaClaraPage() {
     <>
       <TopBar dark />
       <Header dark logoSrc="/images/logo-mentoria-clara.png" logoAlt="Logo Mentoria Rota Clara" />
-      <main className="bg-background text-foreground">
+      <main className="bg-slate-950 text-white">
       <section className="relative overflow-hidden pt-64 pb-20 md:pt-80 md:pb-28">
         <Image
           src="/images/fundo-mentoria-clara.png"
@@ -130,23 +130,23 @@ export default function MentoriaRotaClaraPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="bg-slate-950 py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
-            <div className="rounded-4xl border border-border/70 bg-card/80 p-8 shadow-[0_22px_70px_-45px_rgba(20,32,90,0.35)]">
-              <p className="text-sm font-medium uppercase tracking-widest text-primary">Você percebe que...</p>
+            <div className="rounded-4xl border border-white/12 bg-slate-900/70 p-8 shadow-[0_22px_70px_-45px_rgba(3,8,28,0.8)]">
+              <p className="text-sm font-medium uppercase tracking-widest text-secondary">Você percebe que...</p>
               <div className="mt-6 space-y-4">
                 {signals.map((signal) => (
-                  <div key={signal} className="flex gap-3 rounded-2xl border border-border bg-background/70 p-4">
-                    <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-primary" />
-                    <p className="leading-relaxed text-muted-foreground">{signal}</p>
+                  <div key={signal} className="flex gap-3 rounded-2xl border border-white/10 bg-slate-950/80 p-4">
+                    <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-secondary" />
+                    <p className="leading-relaxed text-white/80">{signal}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="space-y-8">
-              <div className="rounded-4xl border border-primary/15 bg-primary px-8 py-10 text-primary-foreground shadow-[0_25px_90px_-55px_rgba(14,29,97,0.9)] md:px-10">
+              <div className="rounded-4xl border border-primary/30 bg-linear-to-br from-primary/90 via-primary/80 to-slate-900 px-8 py-10 text-primary-foreground shadow-[0_25px_90px_-55px_rgba(14,29,97,0.9)] md:px-10">
                 <p className="text-sm font-medium uppercase tracking-widest text-primary-foreground/75">
                   Isso faz você sentir
                 </p>
@@ -159,11 +159,11 @@ export default function MentoriaRotaClaraPage() {
                 </div>
               </div>
 
-              <div className="rounded-4xl border border-border/70 bg-card/80 p-8 shadow-[0_22px_70px_-45px_rgba(20,32,90,0.35)]">
-                <p className="text-lg leading-relaxed text-muted-foreground md:text-xl">
+              <div className="rounded-4xl border border-white/12 bg-slate-900/70 p-8 shadow-[0_22px_70px_-45px_rgba(3,8,28,0.8)]">
+                <p className="text-lg leading-relaxed text-white/80 md:text-xl">
                   Através de uma imersão profunda de autoconsciência e sabedoria interior, você será conduzido a enxergar com clareza aquilo que hoje te trava, te confunde ou te impede de avançar.
                 </p>
-                <p className="mt-5 text-lg font-medium leading-relaxed text-foreground md:text-xl">
+                <p className="mt-5 text-lg font-medium leading-relaxed text-white md:text-xl">
                   Porém viver uma vida mais leve e consciente é possível!
                 </p>
               </div>
@@ -172,41 +172,41 @@ export default function MentoriaRotaClaraPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 bg-secondary/30">
+      <section className="bg-slate-900/55 py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-medium uppercase tracking-widest text-primary">Imagine...</p>
-            <h2 className="mt-4 font-serif text-3xl text-balance text-foreground md:text-4xl">
+            <p className="text-sm font-medium uppercase tracking-widest text-secondary">Imagine...</p>
+            <h2 className="mt-4 font-serif text-3xl text-balance text-white md:text-4xl">
               Viver sabendo lidar com suas emoções sem se sentir refém delas, ter clareza nas suas decisões, segurança nas suas ações e paz dentro de você.
             </h2>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {benefits.map((benefit) => (
-              <div key={benefit} className="rounded-[1.75rem] border border-border/70 bg-card p-6 shadow-[0_18px_60px_-45px_rgba(20,32,90,0.35)]">
-                <CheckCircle2 className="h-6 w-6 text-primary" />
-                <p className="mt-4 font-serif text-xl leading-tight text-foreground">{benefit}</p>
+              <div key={benefit} className="rounded-[1.75rem] border border-white/12 bg-slate-900/75 p-6 shadow-[0_18px_60px_-45px_rgba(3,8,28,0.8)]">
+                <CheckCircle2 className="h-6 w-6 text-secondary" />
+                <p className="mt-4 font-serif text-xl leading-tight text-white">{benefit}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="bg-slate-950 py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
-            <div className="rounded-4xl border border-border/70 bg-card/80 p-8 shadow-[0_22px_70px_-45px_rgba(20,32,90,0.35)] md:p-10">
-              <p className="text-sm font-medium uppercase tracking-widest text-primary">Durante esse processo, vou te guiar a:</p>
+            <div className="rounded-4xl border border-white/12 bg-slate-900/70 p-8 shadow-[0_22px_70px_-45px_rgba(3,8,28,0.8)] md:p-10">
+              <p className="text-sm font-medium uppercase tracking-widest text-secondary">Durante esse processo, vou te guiar a:</p>
               <div className="mt-6 space-y-4">
                 {processSteps.map((step) => (
-                  <div key={step} className="rounded-2xl border border-border bg-background/70 p-5 text-muted-foreground leading-relaxed">
+                  <div key={step} className="rounded-2xl border border-white/10 bg-slate-950/80 p-5 text-white/80 leading-relaxed">
                     {step}
                   </div>
                 ))}
               </div>
             </div>
 
-            <div id="bonus" className="rounded-4xl border border-primary/15 bg-primary p-8 text-primary-foreground shadow-[0_25px_80px_-50px_rgba(14,29,97,0.9)] md:p-10">
+            <div id="bonus" className="rounded-4xl border border-primary/30 bg-linear-to-br from-primary/90 via-primary/80 to-slate-900 p-8 text-primary-foreground shadow-[0_25px_80px_-50px_rgba(14,29,97,0.9)] md:p-10">
               <p className="text-sm font-medium uppercase tracking-widest text-primary-foreground/70">
                 Bônus
               </p>
@@ -225,13 +225,13 @@ export default function MentoriaRotaClaraPage() {
         </div>
       </section>
 
-      <section id="comecar" className="py-20 md:py-24 bg-secondary/25">
+      <section id="comecar" className="bg-slate-900/65 py-20 md:py-24">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <p className="text-sm font-medium uppercase tracking-widest text-primary">Mentoria Rota Clara</p>
-          <h2 className="mt-4 font-serif text-3xl text-balance text-foreground md:text-4xl">
+          <p className="text-sm font-medium uppercase tracking-widest text-secondary">Mentoria Rota Clara</p>
+          <h2 className="mt-4 font-serif text-3xl text-balance text-white md:text-4xl">
             Para quem cansou de sobreviver e quer viver com intenção e verdade.
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
             Se você reconheceu em si a necessidade de avançar com mais consciência, clareza e direção, essa mentoria foi desenhada para esse próximo passo.
           </p>
 
@@ -247,7 +247,7 @@ export default function MentoriaRotaClaraPage() {
             </Link>
             <Link
               href="/"
-              className="inline-flex items-center justify-center rounded-full border border-border bg-card px-7 py-4 text-base font-medium text-foreground transition-all hover:border-primary/30 hover:bg-background"
+              className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/10 px-7 py-4 text-base font-medium text-white transition-all hover:border-white/40 hover:bg-white/15"
             >
               Voltar para a página inicial
             </Link>
