@@ -15,6 +15,9 @@ export function Hero() {
               <p className="text-sm uppercase tracking-widest text-primary font-medium">
                 Psicanalista & Mentora Emocional
               </p>
+              <p className="text-sm text-muted-foreground md:text-base">
+                Atendimento on-line e presencial em Salvador, BA
+              </p>
               <div className="w-12 h-0.5 bg-primary" />
             </div>
             

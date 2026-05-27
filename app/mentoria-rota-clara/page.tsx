@@ -53,8 +53,8 @@ export default function MentoriaRotaClaraPage() {
           sizes="100vw"
           className="object-cover object-[62%_center] sm:object-center"
         />
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="absolute inset-0 bg-linear-to-b from-black/45 via-black/35 to-black/65" />
+        <div className="absolute inset-0 bg-black/80" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/50 to-black/80" />
         <div className="absolute -left-24 top-20 h-72 w-72 rounded-full bg-primary/30 blur-3xl pointer-events-none" />
         <div className="absolute -right-24 top-32 h-80 w-80 rounded-full bg-secondary/30 blur-3xl pointer-events-none" />
 
