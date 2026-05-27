@@ -3,7 +3,18 @@
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react"
 
-const testimonials = [
+type Testimonial = {
+  quote: string
+  name?: string
+  age?: string
+}
+
+type TestimonialsProps = {
+  items?: Testimonial[]
+  title?: string
+}
+
+const defaultTestimonials: Testimonial[] = [
   {
     quote: "A terapia com você foi reveladora. Essa dependência vinha de padrões antigos que eu carregava e nem me dava conta. Quando consegui enxergar isso, foi bom demais. Hoje sou dona das minhas escolhas e não dependo mais de ninguém para me sentir completa.",
     name: "V. Melo",
@@ -34,15 +45,21 @@ const starLayout = [
   { size: 48, offset: 12 }
 ]
 
-export function Testimonials() {
+export function Testimonials({ items = defaultTestimonials, title = "O que os clientes dizem" }: TestimonialsProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
+  if (items.length === 0) {
+    return null
+  }
+
+  const currentTestimonial = items[currentIndex] ?? items[0]
+
   const nextTestimonial = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length)
+    setCurrentIndex((prev) => (prev + 1) % items.length)
   }
 
   const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
+    setCurrentIndex((prev) => (prev - 1 + items.length) % items.length)
   }
 
   return (
@@ -53,7 +70,7 @@ export function Testimonials() {
             Depoimentos
           </p>
           <h2 className="font-serif text-3xl md:text-4xl text-balance">
-            O que os clientes dizem
+            {title}
           </h2>
         </div>
 
@@ -84,15 +101,21 @@ export function Testimonials() {
               ))}
             </div>
 
-            <blockquote className="font-serif text-xl md:text-2xl leading-relaxed mb-8 italic">
-              {`"${testimonials[currentIndex].quote}"`}
+            <blockquote className="font-serif text-xl md:text-2xl leading-relaxed mb-8 italic whitespace-pre-line">
+              {`"${currentTestimonial.quote}"`}
             </blockquote>
-            
-            <div className="flex items-center justify-center gap-2">
-              <span className="font-medium">{testimonials[currentIndex].name}</span>
-              <span className="text-primary-foreground/60">•</span>
-              <span className="text-primary-foreground/80">{testimonials[currentIndex].age}</span>
-            </div>
+
+            {currentTestimonial.name ? (
+              <div className="flex items-center justify-center gap-2">
+                <span className="font-medium">{currentTestimonial.name}</span>
+                {currentTestimonial.age ? (
+                  <>
+                    <span className="text-primary-foreground/60">•</span>
+                    <span className="text-primary-foreground/80">{currentTestimonial.age}</span>
+                  </>
+                ) : null}
+              </div>
+            ) : null}
           </div>
 
           {/* Navigation */}
@@ -106,7 +129,7 @@ export function Testimonials() {
             </button>
             
             <div className="flex gap-2">
-              {testimonials.map((_, index) => (
+              {items.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}

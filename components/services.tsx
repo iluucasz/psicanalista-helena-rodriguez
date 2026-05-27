@@ -7,33 +7,46 @@ const services = [
     description:
       "Terapia de Reprocessamento Generativo aqui acessamos dores profundas com leveza e direcionamento. Ideal para quem viveu situações difíceis que não gostaria de expor, essa abordagem utiliza visualização, percepção e ressignificação para promover compreensão emocional e alívio interno.",
     icon: Waves,
+    href:
+      "https://wa.me/557187265569?text=Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20do%20TRG",
+    ctaLabel: "Agendar no WhatsApp",
+    external: true,
     image:
       "https://ogmg.my.canva.site/helenarodriguez/_assets/media/0fce2e311b40916fac3524f626f85cac.jpg"
   },
   {
     title: "Atendimento Psicanalítico",
     description:
-      "Um espaço de escuta e interpretação para compreender repetições, conflitos e a raiz do sofrimento emocional.",
+      "Um espaço de escuta e interpretação para compreender repetições, conflitos e a raiz emocional do sofrimento e comportamentos indesejados.",
     icon: BrainCircuit,
+    href:
+      "https://wa.me/557187265569?text=Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20psican%C3%A1lise",
+    ctaLabel: "Agendar no WhatsApp",
+    external: true,
     image:
       "https://ogmg.my.canva.site/helenarodriguez/_assets/media/11bdb2851f2092695f3a89aa1f16752c.jpg"
   },
   {
     title: "Sessões Integradas",
     description:
-      "Encontros que unem diferentes abordagens para ampliar consciência, fortalecer recursos internos e acelerar mudanças.",
+      "Encontros que unem em diferentes abordagens para solucionar questões emocionais,ampliar a consciência e fortalecer os recursos internos. Ideal para quem busca acelerar mudanças.",
     icon: Sparkles,
+    href:
+      "https://wa.me/557187265569?text=Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20integrada",
+    ctaLabel: "Agendar no WhatsApp",
+    external: true,
     image:
       "https://ogmg.my.canva.site/helenarodriguez/_assets/media/9a55b06eb9a5b0721645ed3ec9d95de8.jpg"
   },
   {
     title: "Mentoria Rota Clara",
     description:
-      "Direcionamento estratégico para quem busca postura, discernimento e alinhamento nas várias áreas da vida.",
+      "Direcionamento estratégico para quem busca postura, discernimento e alinhamento emocional com propósito.",
     icon: Compass,
     image:
       "https://ogmg.my.canva.site/helenarodriguez/_assets/media/18fe88f61380a49b7659800b58b0c582.png",
-    href: "/mentoria-rota-clara"
+    href: "/mentoria-rota-clara",
+    ctaLabel: "Conhecer mentoria"
   }
 ]
 
@@ -91,7 +104,7 @@ export function Services() {
                   </p>
                   {service.href ? (
                     <span className="inline-flex items-center gap-2 text-sm font-medium text-primary">
-                      Conhecer mentoria
+                      {service.ctaLabel}
                       <ArrowRight className="h-4 w-4" />
                     </span>
                   ) : null}
@@ -99,7 +112,17 @@ export function Services() {
               </>
             )
 
-            return service.href ? (
+            return service.href && service.external ? (
+              <a
+                key={service.title}
+                href={service.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative block overflow-hidden rounded-4xl border border-border/70 bg-card/80 p-7 shadow-[0_20px_60px_-35px_rgba(20,32,90,0.35)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_28px_70px_-30px_rgba(20,32,90,0.45)]"
+              >
+                {cardContent}
+              </a>
+            ) : service.href ? (
               <Link
                 key={service.title}
                 href={service.href}

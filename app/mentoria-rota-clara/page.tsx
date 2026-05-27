@@ -23,6 +23,21 @@ const benefits = [
   "Avançar com propósito, direção e consciência"
 ]
 
+const mentorshipTestimonials = [
+  {
+    quote:
+      "Sinceramente, foi uma das melhores decisões que tomei. Eu tava perdida, cheia de medo e procrastinando tudo. Durante o processo fui entendendo meus bloqueios e criando mais confiança em mim mesma. Já consigo perceber mudança na minha rotina, nos meus relacionamentos e até na forma como eu me vejo."
+  },
+  {
+    quote:
+      "A Mentoria Rota Clara me ajudou a enxergar bloqueios que eu nem percebia. Hoje me sinto mais segura, consciente e preparada para avançar sem deixar o medo me travar. Trouxe reflexões profundas sobre comportamento, emoções e crenças que muitas vezes me impediram de avançar. Me senti acolhida, compreendida e, ao mesmo tempo, DESAFIADA a enxergar meu verdadeiro potencial.\n\nUma experiência transformadora!!"
+  },
+  {
+    quote:
+      "O que eu mais gostei foi que não era aquele atendimento corrido.\n\nMe senti realmente ouvida e entendida.\n\nHoje tô muito mais leve, com mais clareza sobre o que quero e finalmente conseguindo agir em direção aos meus objetivos."
+  }
+]
+
 export default function MentoriaRotaClaraPage() {
   return (
     <>
@@ -97,31 +112,35 @@ export default function MentoriaRotaClaraPage() {
                 })}
               </div>
 
-              <div className="mt-6 rounded-3xl border border-white/20 bg-slate-950/75 p-6 text-white/90">
-                <p className="text-sm leading-relaxed md:text-base">
-                  1 encontro após 6 meses para acompanhamento, ajustes e avaliação dos resultados.
-                </p>
-              </div>
-
-              <div className="mt-6 rounded-3xl border border-white/20 bg-white/10 p-6 text-white">
+              <div className="mt-6 rounded-3xl border border-white/20 bg-slate-950/85 p-6 text-white">
                 <p className="text-sm uppercase tracking-widest text-white/75">
                   Bônus
                 </p>
-                <div className="mt-4 grid items-center gap-5 sm:grid-cols-[120px_1fr]">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4b22511189ac401689951afd314ffa40-7NT3b6WbxIzWgyZhYZEApfObC7wtEx.png"
-                    alt="Capa do e-book Da Caverna à Evolução"
-                    width={120}
-                    height={180}
-                    sizes="(max-width: 640px) 96px, 120px"
-                    className="mx-auto h-auto w-24 drop-shadow-2xl sm:mx-0 sm:w-30"
-                  />
-                  <div>
-                    <p className="font-serif text-2xl leading-tight">
-                      Acesso ao e-book <span className="italic">Da Caverna à Evolução - O Homem em Progresso</span>
-                    </p>
-                    <p className="mt-3 text-sm leading-relaxed text-white/85">
-                      Uma imersão no sentido da vida e no propósito da nossa existência: entenda o porquê de evoluir e por que estar aqui já é um grande passo.
+                <div className="mt-4 space-y-4">
+                  <div className="rounded-3xl border border-white/15 bg-white/6 p-5 sm:p-6">
+                    <div className="grid items-center gap-5 sm:grid-cols-[120px_1fr]">
+                      <Image
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4b22511189ac401689951afd314ffa40-7NT3b6WbxIzWgyZhYZEApfObC7wtEx.png"
+                        alt="Capa do e-book Da Caverna à Evolução"
+                        width={120}
+                        height={180}
+                        sizes="(max-width: 640px) 96px, 120px"
+                        className="mx-auto h-auto w-24 drop-shadow-2xl sm:mx-0 sm:w-30"
+                      />
+                      <div>
+                        <p className="font-serif text-2xl leading-tight">
+                          Acesso ao e-book <span className="italic">Da Caverna à Evolução - O Homem em Progresso</span>
+                        </p>
+                        <p className="mt-3 text-sm leading-relaxed text-white/85">
+                          Uma imersão no sentido da vida e no propósito da nossa existência: entenda o porquê de evoluir e por que estar aqui já é um grande passo.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="rounded-3xl border border-white/15 bg-white/6 p-5 sm:p-6 text-white/90">
+                    <p className="text-sm leading-relaxed md:text-base">
+                      1 encontro após 6 meses para acompanhamento, ajustes e avaliação dos resultados.
                     </p>
                   </div>
                 </div>
@@ -197,7 +216,7 @@ export default function MentoriaRotaClaraPage() {
         </div>
       </section>
 
-      <Testimonials />
+      <Testimonials items={mentorshipTestimonials} title="O que dizem sobre a Mentoria Rota Clara" />
 
       <section id="comecar" className="bg-slate-900/65 py-20 md:py-24">
         <div className="mx-auto max-w-4xl px-6 text-center">
