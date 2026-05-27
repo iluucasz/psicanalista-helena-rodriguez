@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react"
 
 export function Contact() {
   return (
-    <section id="contato" className="py-24 relative overflow-hidden">
+    <section id="contato" className="py-24 relative overflow-x-clip">
       {/* Circular background effects spanning entire section */}
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-secondary/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />

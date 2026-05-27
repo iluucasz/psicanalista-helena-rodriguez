@@ -78,14 +78,6 @@ export function Book() {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-3 pt-6">
               <a
-                href="https://wa.me/557187265569?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20livro%20Da%20Caverna%20%C3%A0%20Evolu%C3%A7%C3%A3o."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-primary text-background rounded-lg font-medium hover:bg-primary/90 transition-colors text-center"
-              >
-                Saiba Mais
-              </a>
-              <a
                 href="https://pay.hotmart.com/M102747619S?checkoutMode=10&bid=1779822441770"
                 target="_blank"
                 rel="noopener noreferrer"
