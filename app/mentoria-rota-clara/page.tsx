@@ -48,7 +48,7 @@ export default function MentoriaRotaClaraPage() {
         <div className="absolute -left-24 top-20 h-72 w-72 rounded-full bg-primary/30 blur-3xl pointer-events-none" />
         <div className="absolute -right-24 top-32 h-80 w-80 rounded-full bg-secondary/30 blur-3xl pointer-events-none" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-sm backdrop-blur-sm">
               <Sparkles className="h-4 w-4" />
@@ -86,10 +86,10 @@ export default function MentoriaRotaClaraPage() {
             <div className="relative overflow-hidden rounded-[2.5rem] border border-white/20 bg-black/35 p-8 shadow-[0_30px_90px_-45px_rgba(20,32,90,0.4)] backdrop-blur-md">
               <div className="grid grid-cols-2 gap-4 text-sm">
                 {[
-                  { icon: Users, label: "5 encontros" },
-                  { icon: Target, label: "Foco em progresso" },
-                  { icon: GraduationCap, label: "Bônus e-book" },
-                  { icon: CirclePlay, label: "Imersão guiada" }
+                  { icon: Users, label: "5 etapas com 5 encontros individuais" },
+                  { icon: Target, label: "Foco total no seu resultado" },
+                  { icon: GraduationCap, label: "Metodologia comprovada" },
+                  { icon: CirclePlay, label: "Bônus exclusivo" }
                 ].map((item) => {
                   const Icon = item.icon
 
@@ -100,6 +100,12 @@ export default function MentoriaRotaClaraPage() {
                     </div>
                   )
                 })}
+              </div>
+
+              <div className="mt-6 rounded-3xl border border-white/20 bg-slate-950/75 p-6 text-white/90">
+                <p className="text-sm leading-relaxed md:text-base">
+                  1 encontro após 6 meses para acompanhamento, ajustes e avaliação dos resultados.
+                </p>
               </div>
 
               <div className="mt-6 rounded-3xl border border-white/20 bg-white/10 p-6 text-white">
