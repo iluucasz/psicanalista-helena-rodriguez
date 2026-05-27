@@ -51,16 +51,16 @@ export function Header({
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <Link
-              href="/#sobre"
-              className={`text-sm transition-colors ${dark ? "text-white/80 hover:text-white" : "text-muted-foreground hover:text-foreground"}`}
-            >
-              Sobre mim
-            </Link>
-            <Link
               href="/#servicos"
               className={`text-sm transition-colors ${dark ? "text-white/80 hover:text-white" : "text-muted-foreground hover:text-foreground"}`}
             >
               Serviços
+            </Link>
+            <Link
+              href="/#sobre"
+              className={`text-sm transition-colors ${dark ? "text-white/80 hover:text-white" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              Sobre mim
             </Link>
             <Link
               href="/#depoimentos"
@@ -73,6 +73,12 @@ export function Header({
               className={`text-sm transition-colors ${dark ? "text-white/80 hover:text-white" : "text-muted-foreground hover:text-foreground"}`}
             >
               Dúvidas
+            </Link>
+            <Link
+              href="/#publicacoes"
+              className={`text-sm transition-colors ${dark ? "text-white/80 hover:text-white" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              Publicações
             </Link>
             <Link
               href="/mentoria-rota-clara"
@@ -104,18 +110,18 @@ export function Header({
             className={`md:hidden absolute top-full left-0 right-0 border-b p-6 flex flex-col gap-4 ${dark ? "border-white/15 bg-black/85" : "border-border bg-background"}`}
           >
             <Link 
-              href="/#sobre" 
-              className={`py-2 ${dark ? "text-white/90 hover:text-white" : "text-foreground"}`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Sobre mim
-            </Link>
-            <Link 
               href="/#servicos" 
               className={`py-2 ${dark ? "text-white/90 hover:text-white" : "text-foreground"}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Serviços
+            </Link>
+            <Link 
+              href="/#sobre" 
+              className={`py-2 ${dark ? "text-white/90 hover:text-white" : "text-foreground"}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Sobre mim
             </Link>
             <Link 
               href="/#depoimentos" 
@@ -130,6 +136,13 @@ export function Header({
               onClick={() => setIsMenuOpen(false)}
             >
               Dúvidas
+            </Link>
+            <Link 
+              href="/#publicacoes" 
+              className={`py-2 ${dark ? "text-white/90 hover:text-white" : "text-foreground"}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Publicações
             </Link>
             <Link 
               href="/mentoria-rota-clara" 

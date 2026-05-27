@@ -3,7 +3,7 @@ import { BookOpen, Star } from "lucide-react"
 
 export function Book() {
   return (
-    <section className="py-20 md:py-32 px-6">
+    <section id="publicacoes" className="py-20 md:py-32 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
