@@ -181,7 +181,7 @@ export default function MentoriaRotaClaraPage() {
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-medium uppercase tracking-widest text-secondary">Imagine...</p>
             <h2 className="mt-4 font-serif text-3xl text-balance text-white md:text-4xl">
-              Viver sabendo lidar com suas emoções sem se sentir refém delas, ter clareza nas suas decisões, segurança nas suas ações e paz dentro de você.
+              Viver sabendo lidar com suas emoções sem se sentir refém delas, ter clareza nas suas decisões, segurança nas suas ações e paz dentro de você. Você será capaz.
             </h2>
           </div>
 
