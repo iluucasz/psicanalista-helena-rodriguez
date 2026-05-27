@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, CheckCircle2, CirclePlay, GraduationCap, Sparkles, Target, Users } from "lucide-react"
 import { Header } from "@/components/header"
 import { TopBar } from "@/components/topbar"
@@ -29,26 +30,35 @@ const processSteps = [
 export default function MentoriaRotaClaraPage() {
   return (
     <>
-      <TopBar />
-      <Header />
-      <main className="bg-background pt-40 text-foreground md:pt-48">
-      <section className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
-        <div className="absolute inset-x-0 top-0 h-72 bg-linear-to-b from-secondary/25 via-secondary/10 to-transparent pointer-events-none" />
-        <div className="absolute -left-24 top-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl pointer-events-none" />
-        <div className="absolute -right-24 top-32 h-80 w-80 rounded-full bg-secondary/20 blur-3xl pointer-events-none" />
+      <TopBar dark />
+      <Header dark logoSrc="/images/logo-mentoria-clara.png" logoAlt="Logo Mentoria Rota Clara" />
+      <main className="bg-background text-foreground">
+      <section className="relative overflow-hidden pt-64 pb-20 md:pt-80 md:pb-28">
+        <Image
+          src="/images/fundo-mentoria-clara.png"
+          alt="Fundo da Mentoria Rota Clara"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[62%_center] sm:object-center"
+        />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/45 via-black/35 to-black/65" />
+        <div className="absolute -left-24 top-20 h-72 w-72 rounded-full bg-primary/30 blur-3xl pointer-events-none" />
+        <div className="absolute -right-24 top-32 h-80 w-80 rounded-full bg-secondary/30 blur-3xl pointer-events-none" />
 
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-card/80 px-4 py-2 text-sm font-medium text-primary shadow-sm backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-sm backdrop-blur-sm">
               <Sparkles className="h-4 w-4" />
               Mentoria Rota Clara
             </div>
 
             <div className="space-y-5">
-              <h1 className="font-serif text-4xl leading-tight text-balance text-foreground md:text-5xl lg:text-6xl">
+              <h1 className="font-serif text-4xl leading-tight text-balance text-white md:text-5xl lg:text-6xl">
                 Para quem cansou de sobreviver e quer viver com intenção e verdade.
               </h1>
-              <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+              <p className="max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
                 Uma experiência para quem sente que pode ir mais longe, mas precisa de clareza,
                 firmeza emocional e direção para avançar com consciência.
               </p>
@@ -57,14 +67,14 @@ export default function MentoriaRotaClaraPage() {
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
                 href="#comecar"
-                className="inline-flex items-center justify-center gap-3 rounded-full bg-primary px-7 py-4 text-base font-medium text-primary-foreground transition-all hover:gap-4 hover:bg-primary/90"
+                className="inline-flex items-center justify-center gap-4 rounded-full bg-primary px-7 py-4 text-base font-medium text-primary-foreground no-underline transition-all hover:bg-primary/90"
               >
                 Começar agora
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="#bonus"
-                className="inline-flex items-center justify-center gap-3 rounded-full border border-primary/15 bg-card px-7 py-4 text-base font-medium text-primary transition-all hover:border-primary/30 hover:bg-secondary/10"
+                className="inline-flex items-center justify-center gap-3 rounded-full bg-white/15 px-7 py-4 text-base font-medium text-white no-underline transition-all hover:bg-white/20"
               >
                 Ver bônus
               </Link>
@@ -72,8 +82,8 @@ export default function MentoriaRotaClaraPage() {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-6 rounded-[2.5rem] bg-linear-to-br from-primary/20 via-secondary/15 to-transparent blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2.5rem] border border-border/70 bg-card/80 p-8 shadow-[0_30px_90px_-45px_rgba(20,32,90,0.4)] backdrop-blur-sm">
+            <div className="absolute -inset-6 rounded-[2.5rem] bg-linear-to-br from-primary/35 via-secondary/25 to-transparent blur-2xl" />
+            <div className="relative overflow-hidden rounded-[2.5rem] border border-white/20 bg-black/35 p-8 shadow-[0_30px_90px_-45px_rgba(20,32,90,0.4)] backdrop-blur-md">
               <div className="grid grid-cols-2 gap-4 text-sm">
                 {[
                   { icon: Users, label: "5 encontros" },
@@ -84,24 +94,36 @@ export default function MentoriaRotaClaraPage() {
                   const Icon = item.icon
 
                   return (
-                    <div key={item.label} className="rounded-2xl border border-border bg-background/80 p-4">
-                      <Icon className="mb-3 h-5 w-5 text-primary" />
-                      <p className="font-medium text-foreground">{item.label}</p>
+                    <div key={item.label} className="rounded-2xl border border-white/15 bg-white/10 p-4">
+                      <Icon className="mb-3 h-5 w-5 text-white" />
+                      <p className="font-medium text-white">{item.label}</p>
                     </div>
                   )
                 })}
               </div>
 
-              <div className="mt-6 rounded-3xl bg-primary p-6 text-primary-foreground">
-                <p className="text-sm uppercase tracking-widest text-primary-foreground/70">
+              <div className="mt-6 rounded-3xl border border-white/20 bg-white/10 p-6 text-white">
+                <p className="text-sm uppercase tracking-widest text-white/75">
                   Bônus
                 </p>
-                <p className="mt-3 font-serif text-2xl leading-tight">
-                  Acesso ao e-book <span className="italic">Da Caverna à Evolução - O Homem em Progresso</span>
-                </p>
-                <p className="mt-4 text-sm leading-relaxed text-primary-foreground/85">
-                  Uma imersão no sentido da vida e no propósito da nossa existência: entenda o porquê de evoluir e por que estar aqui já é um grande passo.
-                </p>
+                <div className="mt-4 grid items-center gap-5 sm:grid-cols-[120px_1fr]">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4b22511189ac401689951afd314ffa40-7NT3b6WbxIzWgyZhYZEApfObC7wtEx.png"
+                    alt="Capa do e-book Da Caverna à Evolução"
+                    width={120}
+                    height={180}
+                    sizes="(max-width: 640px) 96px, 120px"
+                    className="mx-auto h-auto w-24 drop-shadow-2xl sm:mx-0 sm:w-30"
+                  />
+                  <div>
+                    <p className="font-serif text-2xl leading-tight">
+                      Acesso ao e-book <span className="italic">Da Caverna à Evolução - O Homem em Progresso</span>
+                    </p>
+                    <p className="mt-3 text-sm leading-relaxed text-white/85">
+                      Uma imersão no sentido da vida e no propósito da nossa existência: entenda o porquê de evoluir e por que estar aqui já é um grande passo.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -218,7 +240,7 @@ export default function MentoriaRotaClaraPage() {
               href="https://wa.me/557187265569?text=Ol%C3%A1%2C%20Helena!%20Quero%20come%C3%A7ar%20a%20Mentoria%20Rota%20Clara."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 rounded-full bg-primary px-7 py-4 text-base font-medium text-primary-foreground transition-all hover:gap-4 hover:bg-primary/90"
+              className="inline-flex items-center justify-center gap-4 rounded-full bg-primary px-7 py-4 text-base font-medium text-primary-foreground transition-all hover:bg-primary/90"
             >
               Começar agora
               <ArrowRight className="h-4 w-4" />
